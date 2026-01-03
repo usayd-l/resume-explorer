@@ -93,12 +93,10 @@ export const HeaderSection: React.FC<HeaderSectionProps> = ({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center justify-center w-8 h-8 text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label={link.label}
                 >
-                  <Icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline">
-                    {link.label}
-                  </span>
+                  <Icon className="w-4 h-4 hover:scale-110 transition-transform" />
                 </a>
               );
             })}

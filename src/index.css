@@ -27,8 +27,8 @@
     --muted: 35 12% 94%;
     --muted-foreground: 30 8% 45%;
 
-    /* Crimson accent for interactions */
-    --accent: 0 65% 45%;
+    /* Navy blue accent for interactions */
+    --accent: 220 65% 35%;
     --accent-foreground: 40 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,15 +36,15 @@
 
     --border: 35 15% 88%;
     --input: 35 15% 88%;
-    --ring: 0 65% 45%;
+    --ring: 220 65% 35%;
 
     --radius: 0.375rem;
 
     /* Custom tokens for portfolio */
     --resume-heading: 30 8% 18%;
     --resume-subtext: 30 6% 50%;
-    --resume-link: 0 65% 45%;
-    --resume-link-hover: 0 70% 38%;
+    --resume-link: 220 65% 35%;
+    --resume-link-hover: 220 70% 28%;
     --resume-divider: 35 15% 85%;
     --resume-card-shadow: 0 4px 20px -4px hsl(30 10% 15% / 0.08);
     --resume-card-border: 35 15% 90%;
@@ -74,7 +74,7 @@
     --muted: 30 8% 18%;
     --muted-foreground: 35 10% 60%;
 
-    --accent: 0 60% 55%;
+    --accent: 220 55% 50%;
     --accent-foreground: 40 20% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -82,12 +82,12 @@
 
     --border: 30 8% 22%;
     --input: 30 8% 22%;
-    --ring: 0 60% 55%;
+    --ring: 220 55% 50%;
 
     --resume-heading: 40 12% 90%;
     --resume-subtext: 35 8% 55%;
-    --resume-link: 0 60% 55%;
-    --resume-link-hover: 0 65% 62%;
+    --resume-link: 220 55% 50%;
+    --resume-link-hover: 220 60% 58%;
     --resume-divider: 30 8% 22%;
     --resume-card-shadow: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
     --resume-card-border: 30 8% 25%;

@@ -72,6 +72,25 @@ export interface Certification {
   thumbnailUrl?: string;
 }
 
+export interface LeadershipBullet {
+  text: string;
+  context?: string;
+  linkedProjectId?: string;
+}
+
+export interface Leadership {
+  id: string;
+  organization: string;
+  organizationLogo?: string;
+  organizationDescription?: string;
+  role: string;
+  roleScope?: string;
+  startDate: string;
+  endDate: string;
+  bullets: LeadershipBullet[];
+  organizationUrl?: string;
+}
+
 export interface SocialLink {
   platform: 'linkedin' | 'github' | 'twitter' | 'portfolio' | 'email';
   url: string;
@@ -87,6 +106,7 @@ export interface PortfolioData {
   socialLinks: SocialLink[];
   education: Education[];
   experience: Experience[];
+  leadership: Leadership[];
   projects: Project[];
   skills: SkillCategory[];
   certifications: Certification[];
