@@ -2,6 +2,7 @@ import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { HoverCard } from './HoverCard';
 import { Tooltip } from './Tooltip';
+import { LogoPlaceholder } from './LogoPlaceholder';
 import { Certification } from '@/types/portfolio';
 
 interface CertificationsSectionProps {
@@ -18,13 +19,10 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({ ce
           const CertCard = (
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                {cert.issuerLogo && (
-                  <img
-                    src={cert.issuerLogo}
-                    alt={cert.issuer}
-                    className="w-10 h-10 object-contain"
-                  />
-                )}
+                <LogoPlaceholder
+                  name={cert.issuer}
+                  src={cert.issuerLogo}
+                />
                 <div>
                   <p className="font-medium text-foreground">{cert.name}</p>
                   <p className="text-sm text-muted-foreground">{cert.issuer}</p>
@@ -56,7 +54,7 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({ ce
                 </HoverCard>
                 
                 <Tooltip content={cert.issuerContext || cert.issuer}>
-                  <p className="text-sm text-muted-foreground cursor-help">{cert.issuer}</p>
+                  <p className="text-sm text-muted-foreground">{cert.issuer}</p>
                 </Tooltip>
               </div>
               

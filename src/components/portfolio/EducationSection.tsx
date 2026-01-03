@@ -2,6 +2,7 @@ import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { HoverCard } from './HoverCard';
 import { Tooltip } from './Tooltip';
+import { LogoPlaceholder } from './LogoPlaceholder';
 import { Education } from '@/types/portfolio';
 
 interface EducationSectionProps {
@@ -18,13 +19,10 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ education })
           const InstitutionCard = (
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                {edu.institutionLogo && (
-                  <img
-                    src={edu.institutionLogo}
-                    alt={edu.institution}
-                    className="w-10 h-10 object-contain"
-                  />
-                )}
+                <LogoPlaceholder
+                  name={edu.institution}
+                  src={edu.institutionLogo}
+                />
                 <div>
                   <p className="font-medium text-foreground">{edu.institution}</p>
                   <p className="text-sm text-muted-foreground">{edu.degree} in {edu.field}</p>
@@ -67,7 +65,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ education })
               </div>
               
               <Tooltip content={edu.context || 'Full-time program'}>
-                <span className="text-sm text-muted-foreground whitespace-nowrap cursor-help">
+                <span className="text-sm text-muted-foreground whitespace-nowrap">
                   {edu.startDate} — {edu.endDate}
                 </span>
               </Tooltip>

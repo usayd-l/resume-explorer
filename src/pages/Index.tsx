@@ -1,12 +1,20 @@
 import { HeaderSection } from '@/components/portfolio/HeaderSection';
 import { EducationSection } from '@/components/portfolio/EducationSection';
 import { ExperienceSection } from '@/components/portfolio/ExperienceSection';
+import { LeadershipSection } from '@/components/portfolio/LeadershipSection';
 import { ProjectsSection } from '@/components/portfolio/ProjectsSection';
 import { SkillsSection } from '@/components/portfolio/SkillsSection';
 import { CertificationsSection } from '@/components/portfolio/CertificationsSection';
 import { portfolioData } from '@/data/portfolioData';
 
 const Index = () => {
+  const handleScrollToProject = (projectId: string) => {
+    const element = document.getElementById(`project-${projectId}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Main resume container */}
@@ -24,6 +32,11 @@ const Index = () => {
           <EducationSection education={portfolioData.education} />
           
           <ExperienceSection experience={portfolioData.experience} />
+          
+          <LeadershipSection 
+            leadership={portfolioData.leadership}
+            onScrollToProject={handleScrollToProject}
+          />
           
           <ProjectsSection projects={portfolioData.projects} />
           

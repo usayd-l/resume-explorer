@@ -28,7 +28,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
 
   return (
     <span
-      className={cn('relative inline-block', className)}
+      className={cn('relative inline-block cursor-pointer', className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

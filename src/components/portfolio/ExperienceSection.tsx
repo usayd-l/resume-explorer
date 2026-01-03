@@ -2,6 +2,7 @@ import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { HoverCard } from './HoverCard';
 import { Tooltip } from './Tooltip';
+import { LogoPlaceholder } from './LogoPlaceholder';
 import { Experience } from '@/types/portfolio';
 
 interface ExperienceSectionProps {
@@ -18,13 +19,10 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience
           const CompanyCard = (
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                {exp.companyLogo && (
-                  <img
-                    src={exp.companyLogo}
-                    alt={exp.company}
-                    className="w-10 h-10 object-contain"
-                  />
-                )}
+                <LogoPlaceholder
+                  name={exp.company}
+                  src={exp.companyLogo}
+                />
                 <div>
                   <p className="font-medium text-foreground">{exp.company}</p>
                   {exp.industry && (
@@ -55,7 +53,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience
                   </HoverCard>
                   
                   <Tooltip content={exp.roleScope || exp.role}>
-                    <p className="text-muted-foreground cursor-help">{exp.role}</p>
+                    <p className="text-muted-foreground">{exp.role}</p>
                   </Tooltip>
                 </div>
                 
@@ -66,7 +64,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience
 
               {/* Impact summary with metrics */}
               <Tooltip content={exp.metrics || exp.summary}>
-                <p className="text-foreground text-sm cursor-help">{exp.summary}</p>
+                <p className="text-foreground text-sm">{exp.summary}</p>
               </Tooltip>
 
               {/* Bullet points */}
@@ -74,7 +72,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience
                 {exp.bullets.map((bullet, index) => (
                   <li key={index} className="relative pl-4 text-sm text-muted-foreground before:content-['•'] before:absolute before:left-0 before:text-accent">
                     <Tooltip content={bullet.tools?.join(', ') || 'Various tools'}>
-                      <span className="cursor-help">
+                      <span>
                         {bullet.projectUrl ? (
                           <a
                             href={bullet.projectUrl}

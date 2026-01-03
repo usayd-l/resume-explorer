@@ -96,6 +96,51 @@ export const portfolioData: PortfolioData = {
       companyUrl: 'https://ideo.com',
     },
   ],
+  leadership: [
+    {
+      id: 'lead-1',
+      organization: 'Boy Scouts of America',
+      organizationDescription: 'Youth development organization focused on leadership, citizenship, and outdoor skills training.',
+      role: 'Eagle Scout & Senior Patrol Leader',
+      roleScope: 'Elected leadership role overseeing 45+ scouts and coordinating troop operations',
+      startDate: '2012',
+      endDate: '2016',
+      bullets: [
+        { text: 'Led troop of 45 scouts through 12 weekend camping expeditions and 2 national jamborees', context: 'Managed logistics, safety protocols, and skill instruction for all events' },
+        { text: 'Designed and executed community service project renovating local park facilities', context: 'Coordinated 200+ volunteer hours, secured $3K in material donations' },
+        { text: 'Mentored 8 junior scouts to First Class rank within 18 months', context: 'Developed personalized advancement plans and led weekly skill sessions' },
+      ],
+      organizationUrl: 'https://scouting.org',
+    },
+    {
+      id: 'lead-2',
+      organization: 'Stanford Design for America',
+      organizationLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Leland_Stanford_Junior_University.svg/200px-Seal_of_Leland_Stanford_Junior_University.svg.png',
+      organizationDescription: 'Student-led design studio tackling social impact challenges through human-centered design.',
+      role: 'Studio Lead',
+      roleScope: 'Founded campus chapter; recruited and led 15-member interdisciplinary team',
+      startDate: '2021',
+      endDate: '2022',
+      bullets: [
+        { text: 'Founded campus chapter and built team of 15 designers, engineers, and researchers' },
+        { text: 'Directed 3 pro-bono projects for Bay Area nonprofits', context: 'Partners included local food bank, youth mentorship program, and homeless services org' },
+        { text: 'Facilitated design sprints resulting in 2 deployed solutions still in use', context: 'Solutions serve 500+ community members monthly' },
+      ],
+    },
+    {
+      id: 'lead-3',
+      organization: 'Berkeley Student Technology Mentors',
+      organizationDescription: 'Volunteer program providing tech literacy education to underserved communities.',
+      role: 'Program Coordinator',
+      roleScope: 'Appointed role managing curriculum development and volunteer scheduling',
+      startDate: '2018',
+      endDate: '2020',
+      bullets: [
+        { text: 'Coordinated 30 volunteers delivering weekly tech workshops to 100+ seniors', context: 'Topics included smartphone basics, video calling, and online safety' },
+        { text: 'Developed standardized curriculum adopted across 3 community centers' },
+      ],
+    },
+  ],
   projects: [
     {
       id: 'proj-1',
