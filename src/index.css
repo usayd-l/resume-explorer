@@ -1,96 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm, professional monochrome palette */
+    --background: 40 20% 98%;
+    --foreground: 30 10% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 15% 96%;
+    --card-foreground: 30 10% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 20% 99%;
+    --popover-foreground: 30 10% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep charcoal primary */
+    --primary: 30 8% 20%;
+    --primary-foreground: 40 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm gray secondary */
+    --secondary: 35 10% 92%;
+    --secondary-foreground: 30 8% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 12% 94%;
+    --muted-foreground: 30 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Crimson accent for interactions */
+    --accent: 0 65% 45%;
+    --accent-foreground: 40 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 40 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 0 65% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom tokens for portfolio */
+    --resume-heading: 30 8% 18%;
+    --resume-subtext: 30 6% 50%;
+    --resume-link: 0 65% 45%;
+    --resume-link-hover: 0 70% 38%;
+    --resume-divider: 35 15% 85%;
+    --resume-card-shadow: 0 4px 20px -4px hsl(30 10% 15% / 0.08);
+    --resume-card-border: 35 15% 90%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animation tokens */
+    --transition-fast: 150ms;
+    --transition-normal: 200ms;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 30 10% 8%;
+    --foreground: 40 15% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 30 10% 12%;
+    --card-foreground: 40 15% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 30 10% 10%;
+    --popover-foreground: 40 15% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 40 15% 92%;
+    --primary-foreground: 30 10% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 8% 18%;
+    --secondary-foreground: 40 15% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 8% 18%;
+    --muted-foreground: 35 10% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 60% 55%;
+    --accent-foreground: 40 20% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 40 20% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 30 8% 22%;
+    --input: 30 8% 22%;
+    --ring: 0 60% 55%;
+
+    --resume-heading: 40 12% 90%;
+    --resume-subtext: 35 8% 55%;
+    --resume-link: 0 60% 55%;
+    --resume-link-hover: 0 65% 62%;
+    --resume-divider: 30 8% 22%;
+    --resume-card-shadow: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --resume-card-border: 30 8% 25%;
   }
 }
 
@@ -99,7 +99,135 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Serif headings for resume feel */
+  h1, h2, h3, h4 {
+    font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  /* Hover preview card base styles */
+  .hover-card {
+    @apply absolute z-50 bg-popover border border-border rounded-md shadow-lg;
+    box-shadow: var(--resume-card-shadow);
+    animation: hover-card-in var(--transition-normal) var(--ease-out) forwards;
+  }
+
+  @keyframes hover-card-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Underline animation for links */
+  .animated-underline {
+    @apply relative;
+  }
+
+  .animated-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-accent;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition-normal) var(--ease-out);
+  }
+
+  .animated-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Resume section styling */
+  .resume-section {
+    @apply py-6 border-b;
+    border-color: hsl(var(--resume-divider));
+  }
+
+  .resume-section:last-child {
+    @apply border-b-0;
+  }
+
+  .resume-section-title {
+    @apply text-xs font-semibold uppercase tracking-widest mb-4;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: hsl(var(--resume-subtext));
+  }
+
+  /* Interactive element base */
+  .interactive-element {
+    @apply relative cursor-pointer;
+    transition: color var(--transition-fast) var(--ease-out);
+  }
+
+  .interactive-element:hover {
+    color: hsl(var(--resume-link));
+  }
+
+  /* Skill badge styling */
+  .skill-badge {
+    @apply inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-md;
+    @apply bg-secondary text-secondary-foreground;
+    transition: all var(--transition-fast) var(--ease-out);
+  }
+
+  .skill-badge:hover {
+    @apply bg-accent text-accent-foreground;
+  }
+
+  /* Portrait image grayscale effect */
+  .portrait-grayscale {
+    filter: grayscale(100%);
+    transition: filter var(--transition-normal) var(--ease-out);
+  }
+
+  .portrait-grayscale:hover {
+    filter: grayscale(0%);
+  }
+
+  /* Tooltip styling */
+  .tooltip-content {
+    @apply absolute z-50 px-3 py-2 text-sm bg-foreground text-background rounded-md shadow-lg;
+    animation: tooltip-in var(--transition-fast) var(--ease-out) forwards;
+  }
+
+  @keyframes tooltip-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .resume-link {
+    color: hsl(var(--resume-link));
+    transition: color var(--transition-fast) var(--ease-out);
+  }
+
+  .resume-link:hover {
+    color: hsl(var(--resume-link-hover));
   }
 }
