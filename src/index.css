@@ -231,3 +231,28 @@
     color: hsl(var(--resume-link-hover));
   }
 }
+
+/* Print-friendly styles for PDF export */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print\\:hidden {
+    display: none !important;
+  }
+
+  .hover-card,
+  .tooltip-content {
+    display: none !important;
+  }
+
+  .resume-section {
+    page-break-inside: avoid;
+  }
+
+  .animated-underline::after {
+    display: none;
+  }
+}
