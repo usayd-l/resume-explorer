@@ -10,6 +10,7 @@ import { CertificationsSection } from '@/components/portfolio/CertificationsSect
 import { portfolioData } from '@/data/portfolioData';
 
 const Index = () => {
+  // Portfolio page component
   const { toPDF, targetRef } = usePDF({
     filename: `${portfolioData.name.replace(/\s+/g, '-')}-Resume.pdf`,
     page: {
