@@ -42,9 +42,21 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) =>
             <div key={project.id} className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                 <HoverCard content={ProjectCard}>
-                  <span className="text-lg font-serif font-medium text-foreground animated-underline interactive-element cursor-pointer">
-                    {project.name}
-                  </span>
+                  {(project.demoUrl || project.githubUrl) ? (
+                    <a
+                      href={project.demoUrl || project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-serif font-medium text-foreground animated-underline interactive-element inline-flex items-center gap-1.5 group"
+                    >
+                      {project.name}
+                      <ExternalLink className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  ) : (
+                    <span className="text-lg font-serif font-medium text-foreground animated-underline interactive-element cursor-pointer">
+                      {project.name}
+                    </span>
+                  )}
                 </HoverCard>
 
                 <div className="flex items-center gap-3">

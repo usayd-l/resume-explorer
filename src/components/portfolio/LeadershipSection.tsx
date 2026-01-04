@@ -43,25 +43,25 @@ export const LeadershipSection: React.FC<LeadershipSectionProps> = ({
                             {entry.organizationDescription}
                           </p>
                         )}
-                        {entry.organizationUrl && (
-                          <a
-                            href={entry.organizationUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs text-accent hover:underline mt-2"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            Visit website
-                            <ExternalLink className="w-3 h-3" />
-                          </a>
-                        )}
                       </div>
                     </div>
                   }
                 >
-                  <h3 className="text-base font-medium text-foreground interactive-element inline">
-                    {entry.organization}
-                  </h3>
+                  {entry.organizationUrl ? (
+                    <a
+                      href={entry.organizationUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base font-medium text-foreground animated-underline interactive-element inline-flex items-center gap-1.5 group"
+                    >
+                      {entry.organization}
+                      <ExternalLink className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  ) : (
+                    <h3 className="text-base font-medium text-foreground interactive-element inline">
+                      {entry.organization}
+                    </h3>
+                  )}
                 </HoverCard>
 
                 {/* Role with tooltip */}
