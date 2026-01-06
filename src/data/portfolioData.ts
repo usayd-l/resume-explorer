@@ -1,7 +1,7 @@
 import { PortfolioData } from '@/types/portfolio';
 
 export const portfolioData: PortfolioData = {
-  name: "Alexandra Chen",
+  name: "Muhammad Usayd Lakhani",
   title: "Product Designer & Developer",
   tagline: "Building thoughtful digital experiences at the intersection of design and engineering",
   email: "alex.chen@email.com",
