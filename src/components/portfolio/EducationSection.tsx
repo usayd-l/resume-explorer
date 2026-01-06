@@ -29,7 +29,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ education })
                 </div>
               </div>
               {edu.gpa && (
-                <p className="text-sm text-muted-foreground">GPA: {edu.gpa}</p>
+                <p className="text-sm text-muted-foreground">{edu.gpaLabel || 'GPA'}: {edu.gpa}</p>
               )}
               {edu.honors && edu.honors.length > 0 && (
                 <div className="flex flex-wrap gap-2">
