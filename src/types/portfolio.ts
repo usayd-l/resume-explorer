@@ -7,6 +7,7 @@ export interface Education {
   startDate: string;
   endDate: string;
   gpa?: string;
+  gpaLabel?: string;
   honors?: string[];
   certificateUrl?: string;
   institutionUrl?: string;
