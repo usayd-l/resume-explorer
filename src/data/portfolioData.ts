@@ -44,22 +44,35 @@ export const portfolioData: PortfolioData = {
   experience: [
     {
       id: 'exp-1',
-      company: 'Stripe',
+      company: 'Kahoot!',
       companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/200px-Stripe_Logo%2C_revised_2016.svg.png',
-      companyDescription: 'Financial infrastructure platform powering internet commerce for millions of businesses worldwide.',
-      industry: 'Fintech',
-      role: 'Senior Product Designer',
-      roleScope: 'Leading design for payment infrastructure and developer experience',
-      startDate: 'Jan 2023',
-      endDate: 'Present',
-      summary: 'Led design for payment APIs serving 1M+ developers',
-      metrics: '40% improvement in developer onboarding completion',
+      companyDescription: 'The global learning and engagement platform for companies, teams, and learners worldwide.',
+      industry: 'Educational Technology',
+      role: 'Product Development Intern',
+      roleScope: 'Product discovery, content curation, and user research for Kahoot Sparks',
+      startDate: 'May 2024',
+      endDate: 'July 2024',
+      summary: 'Contributed to the development and iteration of Kahoot Sparks through user research and product refinement',
+      metrics: 'Insights gathered from interviews with educators and students informed multiple shipped Sparks',
       bullets: [
-        { text: 'Redesigned API documentation experience, improving developer satisfaction by 35%', tools: ['Figma', 'React', 'MDX'], projectUrl: 'https://stripe.com/docs' },
-        { text: 'Created design system components adopted across 12 product teams', tools: ['Storybook', 'TypeScript'] },
-        { text: 'Led user research initiative with 50+ developer interviews', tools: ['Dovetail', 'Maze'] },
+        {
+          text: 'Conducted structured interviews with teachers, professors, and students to identify gaps in existing Sparks',
+          tools: ['User Interviews', 'Qualitative Research'],
+        },
+        {
+          text: 'Curated and developed new Kahoot Sparks based on real classroom and learning use cases',
+          tools: ['Product Curation', 'Content Strategy'],
+        },
+        {
+          text: 'Collaborated with product and design teams to refine Sparks using feedback and usage insights',
+          tools: ['Design Thinking', 'Product Feedback Loops'],
+        },
+        {
+          text: 'Translated qualitative user feedback into actionable product improvements',
+          tools: ['Affinity Mapping', 'Internal Documentation'],
+        },
       ],
-      companyUrl: 'https://stripe.com',
+      companyUrl: 'https://kahoot.com',
     },
     {
       id: 'exp-2',
