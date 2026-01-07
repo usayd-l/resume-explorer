@@ -42,88 +42,109 @@ export const portfolioData: PortfolioData = {
     },
   ],
   experience: [
-    {
+        {
       id: 'exp-1',
       company: 'Kahoot!',
-      companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/200px-Stripe_Logo%2C_revised_2016.svg.png',
-      companyDescription: 'The global learning and engagement platform for companies, teams, and learners worldwide.',
+      companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kahoot_Logo.svg/500px-Kahoot_Logo.svg.png',
+      companyDescription: 'A global learning and engagement platform used by schools, universities, and organizations worldwide.',
       industry: 'Educational Technology',
       role: 'Product Development Intern',
       roleScope: 'Product discovery, content curation, and user research for Kahoot Sparks',
       startDate: 'May 2024',
       endDate: 'July 2024',
-      summary: 'Contributed to the development and iteration of Kahoot Sparks through user research and product refinement',
-      metrics: 'Insights gathered from interviews with educators and students informed multiple shipped Sparks',
+      summary: 'Contributed to Kahoot Sparks through rapid user research and product iteration',
+      metrics: 'Interviewed 10+ educators and 50+ students; insights applied within 1–2 weeks',
       bullets: [
         {
-          text: 'Conducted structured interviews with teachers, professors, and students to identify gaps in existing Sparks',
+          text: 'Conducted structured interviews with 10+ teachers and professors to identify gaps in existing Sparks',
           tools: ['User Interviews', 'Qualitative Research'],
         },
         {
-          text: 'Curated and developed new Kahoot Sparks based on real classroom and learning use cases',
+          text: 'Collected feedback from 50+ students across different learning contexts',
+          tools: ['User Feedback', 'Observation'],
+        },
+        {
+          text: 'Curated and developed new Sparks based on real classroom use cases',
           tools: ['Product Curation', 'Content Strategy'],
         },
         {
-          text: 'Collaborated with product and design teams to refine Sparks using feedback and usage insights',
-          tools: ['Design Thinking', 'Product Feedback Loops'],
-        },
-        {
-          text: 'Translated qualitative user feedback into actionable product improvements',
-          tools: ['Affinity Mapping', 'Internal Documentation'],
+          text: 'Translated qualitative insights into actionable improvements shipped within 1–2 week cycles',
+          tools: ['Design Thinking', 'Product Iteration'],
         },
       ],
       companyUrl: 'https://kahoot.com',
     },
-      {
+
+          {
       id: 'exp-2',
       company: 'XTCY Studios',
       companyLogo: 'https://placehold.co/200x200?text=XTCY',
-      companyDescription: 'Independent creative studio focused on branding, web design, and digital experiences.',
+      companyDescription: 'Independent creative studio delivering branding and web solutions for small teams and founders.',
       industry: 'Creative & Digital Services',
       role: 'Founder & Creative Director',
-      roleScope: 'Brand strategy, web design, and end-to-end project execution',
+      roleScope: 'Brand strategy, web design, and project delivery',
       startDate: 'Jan 2023',
       endDate: 'Jan 2024',
-      summary: 'Founded and led a multidisciplinary creative studio delivering branding and web projects',
-      metrics: 'Delivered multiple client projects across branding, web, and digital design',
+      summary: 'Founded and led a creative studio delivering branding and web projects end to end',
+      metrics: 'Delivered 10+ client projects across branding and web',
       bullets: [
         {
-          text: 'Founded XTCY Studios at 16, overseeing brand identity, positioning, and creative direction',
+          text: 'Founded and operated a creative studio, owning strategy, design, and delivery',
           tools: ['Brand Strategy', 'Creative Direction'],
         },
         {
-          text: 'Designed and shipped websites and digital experiences for clients from concept to launch',
+          text: 'Designed and launched 10+ client websites and brand systems from concept to production',
           tools: ['Figma', 'HTML', 'CSS', 'Webflow'],
         },
         {
-          text: 'Managed client relationships, proposals, timelines, and project delivery independently',
-          tools: ['Client Management', 'Project Planning'],
+          text: 'Managed client scoping, timelines, and execution independently',
+          tools: ['Project Planning', 'Client Management'],
         },
         {
-          text: 'Executed visual design across branding systems, marketing assets, and digital touchpoints',
-          tools: ['Adobe Photoshop', 'Illustrator'],
+          text: 'Built reusable design patterns to improve delivery speed and consistency',
+          tools: ['Design Systems', 'Visual Design'],
         },
       ],
       companyUrl: 'https://xtcy-studios.github.io/xtcy-master/',
     },
-    {
-      id: 'exp-3',
-      company: 'IDEO',
-      companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/IDEO_logo.svg/200px-IDEO_logo.svg.png',
-      companyDescription: 'Global design consultancy pioneering human-centered design methodology.',
-      industry: 'Design Consulting',
-      role: 'Design Lead',
-      roleScope: 'Healthcare and public sector innovation projects',
-      startDate: 'Aug 2020',
-      endDate: 'May 2022',
-      summary: 'Led cross-functional teams on $2M+ innovation projects',
-      metrics: '3 projects selected for design awards',
-      bullets: [
-        { text: 'Directed design strategy for healthcare startup, securing $15M Series A', tools: ['Service Design', 'Prototyping'] },
-        { text: 'Facilitated 20+ design sprints with Fortune 500 clients', tools: ['Miro', 'Workshop Facilitation'] },
-      ],
-      companyUrl: 'https://ideo.com',
-    },
+
+      {
+    id: 'exp-3',
+    company: 'Klimt Supply',
+    companyLogo: 'https://placehold.co/200x200?text=Klimt',
+    companyDescription: 'Streetwear and fashion brand focused on contemporary urban culture.',
+    industry: 'Fashion & Apparel',
+    role: 'Designer & Photo Editor',
+    roleScope: 'Visual design, garment concepts, and digital content',
+    startDate: 'Sep 2022',
+    endDate: 'Dec 2023',
+    summary: 'Contributed visual and digital design to a growing consumer fashion brand',
+    metrics: 'Creative assets supported 100k+ views, impressions, and inbound traffic',
+    bullets: [
+      {
+        text: 'Edited product and campaign photography used across website, social, and marketing channels',
+        tools: ['Adobe Photoshop', 'Photo Editing'],
+      },
+      {
+        text: 'Designed garment concepts that progressed into manufacturing and sale',
+        tools: ['Fashion Design', 'Concept Development'],
+      },
+      {
+        text: 'Produced visual and video assets contributing to 100k+ cumulative views and impressions',
+        tools: ['Content Production', 'Video Editing'],
+      },
+      {
+        text: 'Supported website updates and release-day fixes to ensure smooth campaign launches',
+        tools: ['Web Support', 'Frontend Basics'],
+      },
+      {
+        text: 'Researched global fashion trends to inform seasonal product direction',
+        tools: ['Trend Research', 'Market Analysis'],
+      },
+    ],
+    companyUrl: 'https://klimtgold.com/',
+  },
+
   ],
   leadership: [
     {
