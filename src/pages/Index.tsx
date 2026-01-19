@@ -1,4 +1,3 @@
-import { usePDF } from 'react-to-pdf';
 import { Download } from 'lucide-react';
 import { HeaderSection } from '@/components/portfolio/HeaderSection';
 import { EducationSection } from '@/components/portfolio/EducationSection';
@@ -10,15 +9,6 @@ import { CertificationsSection } from '@/components/portfolio/CertificationsSect
 import { portfolioData } from '@/data/portfolioData';
 
 const Index = () => {
-  // Portfolio page component
-  const { toPDF, targetRef } = usePDF({
-    filename: `${portfolioData.name.replace(/\s+/g, '-')}-Resume.pdf`,
-    page: {
-      margin: 20,
-      format: 'A4',
-    },
-  });
-
   const handleScrollToProject = (projectId: string) => {
     const element = document.getElementById(`project-${projectId}`);
     if (element) {
@@ -28,18 +18,19 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Export PDF Button */}
-      <button
-        onClick={() => toPDF()}
+      {/* Download PDF Button */}
+      <a
+        href="/UsaydLakhani_Resume.pdf"
+        download="UsaydLakhani_Resume.pdf"
         className="fixed top-6 right-6 z-50 flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-md shadow-lg hover:bg-primary/90 transition-colors print:hidden"
       >
         <Download className="w-4 h-4" />
-        Export PDF
-      </button>
+        Download Resume
+      </a>
 
       {/* Main resume container */}
       <main className="max-w-3xl mx-auto px-6 py-12 md:py-20">
-        <article ref={targetRef} className="space-y-0 bg-background">
+        <article className="space-y-0 bg-background">
           <HeaderSection
             name={portfolioData.name}
             title={portfolioData.title}
